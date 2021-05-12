@@ -9,7 +9,7 @@
 import Foundation
 import Combine
 
-@available(iOS 13.0, *)
+@available(iOS 13.0, watchOS 6.0, *)
 public class CountdownTimer: ObservableObject {
     public enum Status {
         case stop
@@ -60,7 +60,7 @@ public class CountdownTimer: ObservableObject {
     }
 }
 
-@available(iOS 13.0, *)
+@available(iOS 13.0, watchOS 6.0, *)
 public extension CountdownTimer {
     func start() {
         guard status != .countdown else { return }
@@ -74,7 +74,7 @@ public extension CountdownTimer {
     }
 }
 
-@available(iOS 13.0, *)
+@available(iOS 13.0, watchOS 6.0, *)
 private extension CountdownTimer {
     func startTimer() {
         status = .countdown

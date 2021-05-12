@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-@available(iOS 13.0, *)
+@available(iOS 13.0, watchOS 6.0, *)
 public struct TimerTextView: View {
 
     @Environment(\.fontColor) private var fontColor
@@ -59,7 +59,7 @@ public struct TimerTextView: View {
     }
 }
 
-@available(iOS 13.0, *)
+@available(iOS 13.0, watchOS 6.0, *)
 struct TimerTextView_Previews: PreviewProvider {
     static var previews: some View {
         TimerTextView(countdownTimer: CountdownTimer(limitTimeInteraval: 10))

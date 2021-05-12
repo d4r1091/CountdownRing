@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-@available(iOS 13.0, *)
+@available(iOS 13.0, watchOS 6.0, *)
 struct AnimationRingShape: Shape {
     private var remain: Double
 

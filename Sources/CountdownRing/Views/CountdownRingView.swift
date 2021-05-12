@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-@available(iOS 13.0, *)
+@available(iOS 13.0, watchOS 6.0, *)
 public struct CountdownRingView: View {
 
     @ObservedObject var countdownTimer: CountdownTimer
@@ -51,7 +51,7 @@ public struct CountdownRingView: View {
     }
 }
 
-@available(iOS 13.0, *)
+@available(iOS 13.0, watchOS 6.0, *)
 private extension CountdownRingView {
     var animation: Animation {
         Animation
@@ -60,7 +60,7 @@ private extension CountdownRingView {
     }
 }
 
-@available(iOS 13.0, *)
+@available(iOS 13.0, watchOS 6.0, *)
 struct RingSpinnerView_Previews: PreviewProvider {
     static var previews: some View {
         CountdownRingView(countdownTimer: CountdownTimer(limitTimeInteraval: 10))
