@@ -34,7 +34,7 @@ public struct TimerTextView: View {
             Spacer()
 
             Text(countdownTimer.formattedDuration)
-                .font(.system(size: textSize, design: .monospaced))
+                .font(.system(size: textSize, design: .rounded))
                 .lineLimit(1)
                 .padding(.horizontal, 24.0)
                 .minimumScaleFactor(.leastNonzeroMagnitude)
@@ -49,7 +49,7 @@ public struct TimerTextView: View {
                     .foregroundColor(fontColor)
 
                 Text(countdownTimer.formattedLimitDuration)
-                    .font(.system(size: limitTextSize, design: .monospaced))
+                    .font(.system(size: limitTextSize, design: .rounded))
                     .lineLimit(1)
                     .minimumScaleFactor(0.9)
                     .foregroundColor(fontColor)
